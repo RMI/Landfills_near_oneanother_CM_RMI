@@ -1,4 +1,4 @@
-# landfills_near_oneanother_CM_RMI
+# plume_attribution_infrastructure_QC_list
 
 This repository contains a waste_sites_3km.csv file that keeps track of waste sites that are close to each other and should be manually QA/QCed for plume attribution. This is a community project and we welcome other organizations to contribute to this QA/QC. We will expand the list to include other sectors in the future. 
 
