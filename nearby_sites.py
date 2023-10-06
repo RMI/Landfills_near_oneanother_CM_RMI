@@ -64,6 +64,10 @@ print(len(sites_near_sites))
 subset_df = df[df['asset_id'].isin(sites_near_sites)].copy()
 print(len(subset_df))
 
-subset_df.to_csv('sites_near_sites.csv', index=False)
+subset_df['data_source'] = 'Climate TRACE'
+subset_df = subset_df[['asset_id', 'data_source', 'asset_name', 'asset_type', 'Latitude', 'Longitude']]
+subset_df.rename(columns={"asset_id": "source_asset_id"}, inplace=True)
+
+subset_df.to_csv('waste_sites_3km.csv', index=False)
 
 # %%
